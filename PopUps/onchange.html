@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<title>Onchange</title>
+<script>
+function handleOnChangeEvent(x) {
+    //document.bgColor = x;
+    window.location = x;
+}
+
+
+</script>
+
+<body>
+
+    <select onchange="handleOnChangeEvent(this.value)">
+        <option>Select a color</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="http://www.google.com">website</option>
+    </select>
+</body>
+
+</html>

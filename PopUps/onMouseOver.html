@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>OnMouseoVer</title>
+<script>
+function handleMouseDownEven(x) {
+    x.style.backgroundColor = "yellow";
+    x.innerHTML = "MOUSEDOWN";
+}
+
+function handleMousUpEvent(x) {
+    x.style.backgroundColor = "blue";
+    x.innerHTML = "MOUSEUP";
+}
+
+</script>
+
+<body>
+    <p onmousedown="handleMouseDownEven(this)" onmouseup="handleMousUpEvent(this)"> Mouse Up/ Down</p>
+</body>
+
+</html>

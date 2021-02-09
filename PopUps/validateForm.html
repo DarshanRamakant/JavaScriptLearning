@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<title>OnMouseoVer</title>
+<script>
+    function validateAge() {
+        try{
+            var x = document.getElementById("age").value;
+            if (x =="") {
+                throw "Age cannot be empty";
+            }
+            if (x<18) {
+                throw "Too young to vote";
+            }
+        }catch(obj) {
+            document.getElementById("errorinfo").innerHTML = obj;
+        }
+    }
+
+</script>
+
+<body>
+    Age: <input type="text" id="age" />
+    <input type="button" onclick="validateAge()"  value="validate"/>
+    <p id = "errorinfo"></p>
+</body>
+
+</html>

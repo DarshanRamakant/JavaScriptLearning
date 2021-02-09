@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>OnMouseoVer</title>
+<script>
+    function calculate(obj) {
+       var x = parseFloat(document.calcform.num1.value);
+       var y = parseFloat(document.calcform.num2.value);
+       var z = document.calcform.result;
+        if (obj.value == "Add") {
+
+            z.value = x+y;
+        }
+
+        if (obj.value == "Sub") {
+            z.value = x-y;
+        }
+
+        if (obj.value == "Mul") {
+            z.value = x*y;
+        }
+
+        if (obj.value == "Div") {
+            z.value = x/y;
+        }
+
+    }
+
+</script>
+
+<body>
+    <form name = "calcform">
+        Number1 : <input type="text" name="num1"><br/>
+        Number2 : <input type="text" name="num2"><br/>
+        Result : <input type="text" name="result"><br/>
+        <input type="button" name="Add" value="Add" onclick="calculate(this)"/>
+        <input type="button" name="Sub" value="Sub" onclick="calculate(this)"/>
+        <input type="button" name="Mul" value="Mul" onclick="calculate(this)"/>
+        <input type="button" name="Div" value="Div" onclick="calculate(this)"/>
+
+
+    </form>
+</body>
+
+</html>

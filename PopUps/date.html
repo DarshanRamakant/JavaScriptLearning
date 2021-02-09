@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<title>OnMouseoVer</title>
+<script>
+
+    function continuousDisplay() {
+        setInterval(displayDate,1000);
+    }
+    function displayDate() {
+        var d = new Date();
+        document.getElementById("dateinfo").innerHTML = d;
+    }
+</script>
+
+<body onload="continuousDisplay()">
+    <p id="dateinfo">Date info</p>
+</body>
+
+</html>
